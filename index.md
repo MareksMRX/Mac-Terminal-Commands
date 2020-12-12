@@ -86,13 +86,13 @@ Command History |
 Ctrl + R | Search through previously used commands history n	Shows the previous commands you've typed. Add a number to limit to the last n items
 ![value] | Execute the last command typed that starts with a value
 !! | Execute the last command typed
-Permissions | 
+:spades:Permissions:spades: | 
 ls -ld | Display the default permission for a home directory
 ls -ld/<dir> | Display the read, write, and access permission of a particular folder
 chmod 755 <file> | Change the permission of a file to 755
 chmod -R 600 <dir> | Change the permission of a folder (and its contents) to 600
 chown <user>:<group> <file> | Change the ownership of a file to user and group. Add -R to include folder contents
-Processes | 
+:spades:Processes:spades: | 
 ps -ax | Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal
 ps -aux | Shows all the processes with %cpu, %mem, page in, PID, and command
 top | Display live information about currently running processes
@@ -100,13 +100,13 @@ top -ocpu -s 5 | Display processes sorted by CPU usage, updating every 5 seconds
 top -o rsize | Sort top by memory usage
 kill PID | Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
 (ps -ax | grep <appname>) | Find a process by name or PID
-Network | 
+:spades:Network:spades: | 
 ping <host> | Ping host and display status
 whois <domain> | Output whois info for a domain
 curl -O <url/to/file> | Download file via HTTP, HTTPS, or FTP
 ssh <username>@<host> | Establish SSH connection to <host> with user <username>
 scp <file><user>@<host>:/remote/path | Copy <file> to a remote <host>
-Homebrew | 
+:spades:Homebrew:spades: | 
 brew doctor | Check brew for potential problems
 brew install <formula> | Install a formula
 brew uninstall <formula> | Uninstall a formula
