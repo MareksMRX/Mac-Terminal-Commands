@@ -60,34 +60,32 @@ du -s | Display an entry for each specified file
 du -sk* | sort -nr | List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
 df -h | Calculate your system's free disk space
 df -H | Calculate free disk space in powers of 1,000 (as opposed to 1,024)
-### File and Directory Management | 
-mkdir <dir>	Create new folder named <dir>
-mkdir -p <dir>/<dir>	Create nested folders
-mkdir <dir1> <dir2> <dir3>	Create several folders at once
-mkdir "<dir>"	Create a folder with a space in the filename
-rmdir <dir>	Delete a folder (only works on empty folders)
-rm -R <dir>	Delete a folder and its contents
-touch <file>	Create a new file without any extension
-cp <file> <dir>	Copy a file to the folder
-cp <file> <newfile>	Copy a file to the current folder
-cp <file>~/<dir>/<newfile>	Copy a file to the folder and rename the copied file
-cp -R <dir> <"new dir">	Copy a folder to a new folder with spaces in the filename
-cp -i <file><dir>	Prompts you before copying a file with a warning overwrite message
-cp <file1> <file2> <file3>/Users/<dir>	Copy multiple files to a folder
-rm <file>	Delete a file (This deletes the file permanently; use with caution.)
-rm -i <file>	Delete a file only when you give confirmation
-rm -f <file>	Force removal without confirmation
-rm <file1> <file2> <file3>	Delete multiple files without any confirmation
-mv <file> <newfilename>	Move/rename
-mv <file> <dir>	Move a file to the folder, possibly by overwriting an existing file
-mv -i <file> <dir>	Optional -i flag to warn you before overwriting the file
-mv *.png ~/<dir>	Move all PNG files from current folder to a different folder
-  
-### Command History
-Ctrl + R	Search through previously used commands
-history n	Shows the previous commands you've typed. Add a number to limit to the last n items
-![value]	Execute the last command typed that starts with a value
-!!	Execute the last command typed
+File and Directory Management | 
+mkdir <dir> | Create new folder named <dir>
+mkdir -p <dir>/<dir> | Create nested folders
+mkdir <dir1> <dir2> <dir3> | Create several folders at once
+mkdir "<dir>" | Create a folder with a space in the filename
+rmdir <dir> | Delete a folder (only works on empty folders)
+rm -R <dir> | Delete a folder and its contents
+touch <file> | Create a new file without any extension
+cp <file> <dir> | Copy a file to the folder
+cp <file> <newfile> | Copy a file to the current folder
+cp <file>~/<dir>/<newfile> | Copy a file to the folder and rename the copied file
+cp -R <dir> <"new dir"> | Copy a folder to a new folder with spaces in the filename
+cp -i <file><dir> | Prompts you before copying a file with a warning overwrite message
+cp <file1> <file2> <file3>/Users/<dir> | Copy multiple files to a folder
+rm <file> | Delete a file(This deletes the file permanently; use with caution.)
+rm -i <file> | Delete a file only when you give confirmation
+rm -f <file> | Force removal without confirmation
+rm <file1> <file2> <file3> | Delete multiple files without any confirmation
+mv <file> <newfilename> | Move/rename
+mv <file> <dir> | Move a file to the folder, possibly by overwriting an existing file
+mv -i <file> <dir> | Optional -i flag to warn you before overwriting the file
+mv *.png ~/<dir> | Move all PNG files from current folder to a different folder
+Command History | 
+Ctrl + R | Search through previously used commands history n	Shows the previous commands you've typed. Add a number to limit to the last n items
+![value] | Execute the last command typed that starts with a value
+!! | Execute the last command typed
   
 ### Permissions
 ls -ld	Display the default permission for a home directory
@@ -103,39 +101,39 @@ top	Display live information about currently running processes
 top -ocpu -s 5	Display processes sorted by CPU usage, updating every 5 seconds
 top -o rsize	Sort top by memory usage
 kill PID	Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
-ps -ax | grep <appname>	Find a process by name or PID
+(ps -ax | grep <appname>) | Find a process by name or PID
   
 ### Network
-ping <host>	Ping host and display status
-whois <domain>	Output whois info for a domain
-curl -O <url/to/file>	Download file via HTTP, HTTPS, or FTP
-ssh <username>@<host>	Establish SSH connection to <host> with user <username>
-scp <file><user>@<host>:/remote/path	Copy <file> to a remote <host>
+ping <host> | Ping host and display status
+whois <domain> | Output whois info for a domain
+curl -O <url/to/file> | Download file via HTTP, HTTPS, or FTP
+ssh <username>@<host> | Establish SSH connection to <host> with user <username>
+scp <file><user>@<host>:/remote/path | Copy <file> to a remote <host>
   
 ### Homebrew
-brew doctor	Check brew for potential problems
-brew install <formula>	Install a formula
-brew uninstall <formula>	Uninstall a formula
-brew list	List all the installed formulas
-brew search	Display available formulas for brewing
-brew upgrade	Upgrade all outdated and unpinned brews
-brew update	Fetch latest version of homebrew and formula
-brew cleanup	Remove older version of installed formula
-brew tap homebrew/cask	Tap the cask repository from GitHub
-brew cask list	List all installed casks
-brew cask install <cask>	Install the given cask
-brew cask uninstall <cask>	Uninstall the given cask
+brew doctor | Check brew for potential problems
+brew install <formula> | Install a formula
+brew uninstall <formula> | Uninstall a formula
+brew list | List all the installed formulas
+brew search | Display available formulas for brewing
+brew upgrade | Upgrade all outdated and unpinned brews
+brew update | Fetch latest version of homebrew and formula
+brew cleanup | Remove older version of installed formula
+brew tap homebrew/cask | Tap the cask repository from GitHub
+brew cask list | List all installed casks
+brew cask install <cask> | Install the given cask
+brew cask uninstall <cask> | Uninstall the given cask
   
 ### Search
-find <dir> -name <"file">	Find all files named <file> inside <dir>. Use wildcards (*) to search for parts of filenames
-grep "<text>" <file>	Output all occurrences of <text> inside <file> (add -i for case insensitivity)
-grep -rl "<text>" <dir>	Search for all files containing <text> inside <dir>
+find <dir> -name <"file"> | Find all files named <file> inside <dir>. Use wildcards (*) to search for parts of filenames
+grep "<text>" <file> | Output all occurrences of <text> inside <file> (add -i for case insensitivity)
+grep -rl "<text>" <dir> | Search for all files containing <text> inside <dir>
     
 ### Output
-cat <file>	Output the content of <file>
-less <file>	Output the contents of <file> using the less command that supports pagination and more
-head <file>	Output the first 10 lines of <file>
-<cmd> > > <file>	Appends the output of <cmd> to <file>
-<cmd> > <file>	Direct the output of <cmd> into <file>
-<cmd1> | <cmd2>	Direct the output of <cmd1> to <cmd2>
+cat <file> | Output the content of <file>
+less <file> | Output the contents of <file> using the less command that supports pagination and more
+head <file> | Output the first 10 lines of <file>
+<cmd> > > <file> | Appends the output of <cmd> to <file>
+<cmd> > <file> | Direct the output of <cmd> into <file>
+<cmd1> | <cmd2> | Direct the output of <cmd1> to <cmd2>
 
