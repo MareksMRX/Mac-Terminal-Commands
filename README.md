@@ -1,9 +1,10 @@
 # The-Mac-Terminal-Commands-Cheat-Sheet
 There are lot of commands in this cheat sheet. But you don't have to learn all of them at once! Pick a few that integrate well with your workflow and save you the most time. Once you've mastered these commands, there's still more to learn about the Terminal to enhance your experience with it.
 
-The Mac Terminal Commands Cheat Sheet
-Command	Action
-Shortcuts
+-- The Mac Terminal Commands Cheat Sheet Command	
+
+-- Action    >>>>     Shortcuts ===
+
 Tab	Auto-complete file and folder names
 Ctrl + A	Go to the beginning of the line you're currently typing on
 Ctrl + E	Go to the end of the line you're currently typing on
@@ -22,7 +23,8 @@ Ctrl + B	Move cursor one character backward
 Ctrl + Y	Paste whatever was cut by the last command
 Ctrl + Z	Puts whatever you're running into a suspended background process
 Ctrl + _	Undo the last command
-Basics
+
+-- Basics===
 / (Forward Slash)	Top level directory
 . (Single Period)	Current directory
 .. (Double Period)	Parent directory
@@ -32,7 +34,8 @@ nano [file]	Opens the Terminal editor
 open [file]	Opens a file
 [command] -h	Get help about a command
 man [command]	Show the help manual of the command
-Change Directory
+
+-- Change Directory===
 cd	Home directory
 cd [folder]	Change directory, e.g. cd Documents
 cd ~	Home directory
@@ -41,7 +44,8 @@ cd -	Previous directory or folder you last browsed
 pwd	Show your working directory
 cd..	Move up to the parent directory
 cd../..	Move up two levels
-List Directory Contents
+
+-- List Directory Contents===
 ls	Display the name of files and subdirectories in the directory
 ls -C	Force multi-column output of the listing
 ls -a	List all entries including those with .(period) and ..(double period)
@@ -53,14 +57,16 @@ ls -lt	List the files sorted by time modified (most recent first)
 ls -lh	Long listing with human readable file sizes in KB, MB, or GB
 ls -lo	List the file names with size, owner, and flags
 ls -la	List detailed directory contents, including hidden files
-File Size and Disk Space
+
+-- File Size and Disk Space===
 du	List usage for each subdirectory and its contents
 du -sh [folder]	Human readable output of all files in a directory
 du -s	Display an entry for each specified file
 du -sk* | sort -nr	List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
 df -h	Calculate your system's free disk space
 df -H	Calculate free disk space in powers of 1,000 (as opposed to 1,024)
-File and Directory Management
+
+-- File and Directory Management===
 mkdir <dir>	Create new folder named <dir>
 mkdir -p <dir>/<dir>	Create nested folders
 mkdir <dir1> <dir2> <dir3>	Create several folders at once
@@ -82,18 +88,20 @@ mv <file> <newfilename>	Move/rename
 mv <file> <dir>	Move a file to the folder, possibly by overwriting an existing file
 mv -i <file> <dir>	Optional -i flag to warn you before overwriting the file
 mv *.png ~/<dir>	Move all PNG files from current folder to a different folder
-Command History
+-- Command History===
 Ctrl + R	Search through previously used commands
 history n	Shows the previous commands you've typed. Add a number to limit to the last n items
 ![value]	Execute the last command typed that starts with a value
 !!	Execute the last command typed
-Permissions
+  
+-- Permissions===
 ls -ld	Display the default permission for a home directory
 ls -ld/<dir>	Display the read, write, and access permission of a particular folder
 chmod 755 <file>	Change the permission of a file to 755
 chmod -R 600 <dir>	Change the permission of a folder (and its contents) to 600
 chown <user>:<group> <file>	Change the ownership of a file to user and group. Add -R to include folder contents
-Processes
+  
+-- Processes===
 ps -ax	Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal
 ps -aux	Shows all the processes with %cpu, %mem, page in, PID, and command
 top	Display live information about currently running processes
@@ -101,13 +109,15 @@ top -ocpu -s 5	Display processes sorted by CPU usage, updating every 5 seconds
 top -o rsize	Sort top by memory usage
 kill PID	Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
 ps -ax | grep <appname>	Find a process by name or PID
-Network
+  
+-- Network===
 ping <host>	Ping host and display status
 whois <domain>	Output whois info for a domain
 curl -O <url/to/file>	Download file via HTTP, HTTPS, or FTP
 ssh <username>@<host>	Establish SSH connection to <host> with user <username>
 scp <file><user>@<host>:/remote/path	Copy <file> to a remote <host>
-Homebrew
+  
+-- Homebrew===
 brew doctor	Check brew for potential problems
 brew install <formula>	Install a formula
 brew uninstall <formula>	Uninstall a formula
@@ -120,11 +130,13 @@ brew tap homebrew/cask	Tap the cask repository from GitHub
 brew cask list	List all installed casks
 brew cask install <cask>	Install the given cask
 brew cask uninstall <cask>	Uninstall the given cask
-Search
+  
+-- Search===
 find <dir> -name <"file">	Find all files named <file> inside <dir>. Use wildcards (*) to search for parts of filenames
 grep "<text>" <file>	Output all occurrences of <text> inside <file> (add -i for case insensitivity)
 grep -rl "<text>" <dir>	Search for all files containing <text> inside <dir>
-Output
+  
+-- Output===
 cat <file>	Output the content of <file>
 less <file>	Output the contents of <file> using the less command that supports pagination and more
 head <file>	Output the first 10 lines of <file>
