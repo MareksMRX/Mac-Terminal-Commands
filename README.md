@@ -6,7 +6,7 @@ There are lot of commands in this cheat sheet. But you don't have to learn all o
 -- Action    >>>>     Shortcuts ===
 
 Tab	Auto-complete file and folder names
-Ctrl + A	Go to the beginning of the line you're currently typing on
+Ctrl + A	<Go to the beginning of the line you're currently typing on>
 Ctrl + E	Go to the end of the line you're currently typing on
 Ctrl + U	Clear the line before the cursor
 Ctrl + K	Clear the line after the cursor
