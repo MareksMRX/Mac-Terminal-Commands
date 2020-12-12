@@ -22,7 +22,7 @@ Ctrl + B | Move cursor one character backward
 Ctrl + Y | Paste whatever was cut by the last command
 Ctrl + Z | Puts whatever you're running into a suspended background process
 Ctrl + _ | Undo the last command
-Basics |   
+Basics=== |   
 / (Forward Slash) | Top level directory
 . (Single Period) | Current directory
 .. (Double Period) | Parent directory
@@ -32,7 +32,7 @@ nano [file] | Opens the Terminal editor
 open [file] | Opens a file
 [command] -h | Get help about a command
 man [command] | Show the help manual of the command
-Change Directory | 
+Change Directory=== | 
 cd | Home directory
 cd [folder] | Change directory, e.g. cd Documents
 cd ~ | Home directory
@@ -41,7 +41,7 @@ cd - | Previous directory or folder you last browsed
 pwd | Show your working directory
 cd.. | Move up to the parent directory
 cd../.. | Move up two levels
-List Directory Contents | 
+List Directory Contents=== | 
 ls | Display the name of files and subdirectories in the directory
 ls -C | Force multi-column output of the listing
 ls -a | List all entries including those with .(period) and ..(double period)
