@@ -24,7 +24,7 @@ Ctrl + Z | Puts whatever you're running into a suspended background process
 Ctrl + _ | Undo the last command
 
 
-### Basics | SHORTCUTS
+Basics |   
 ------------ | -------------
 / (Forward Slash) | Top level directory
 . (Single Period) | Current directory
