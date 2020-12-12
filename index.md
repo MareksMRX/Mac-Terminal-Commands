@@ -1,51 +1,7 @@
-# The-Mac-Terminal-Commands-Cheat-Sheet
+# The-Mac-Terminal-Commands-Cheat-Sheet :keyboard:
 
-You can use the [editor on GitHub](https://github.com/MareksMRX/The-Mac-Terminal-Commands-Cheat-Sheet/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MareksMRX/The-Mac-Terminal-Commands-Cheat-Sheet/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-
-
-# The-Mac-Terminal-Commands-Cheat-Sheet
 There are lot of commands in this cheat sheet. But you don't have to learn all of them at once! Pick a few that integrate well with your workflow and save you the most time. Once you've mastered these commands, there's still more to learn about the Terminal to enhance your experience with it.
-
-## The Mac Terminal Commands Cheat Sheet Command	
-
-Action    >>>>     Shortcuts ===
-
+:keyboard:
 ACTION | SHORTCUTS
 ------------ | -------------
 Tab | Auto-complete file and folder names
@@ -53,64 +9,62 @@ Ctrl + A | Go to the beginning of the line you're currently typing on>
 Ctrl + E | Go to the end of the line you're currently typing on
 Ctrl + U | Clear the line before the cursor
 Ctrl + K | Clear the line after the cursor
-
-
-Ctrl + W	Delete the word before the cursor
-Ctrl + T	Swap the last two characters before the cursor
-Esc + T	Swap the last two words before the cursor
-Ctrl + L	Clear the screen
-Ctrl + C	Kill whatever you're running
-Ctrl + D	Exit the current shell
-Option + →	Move cursor one word forward
-Option + ←	Move cursor one word backward
-Ctrl + F	Move cursor one character forward
-Ctrl + B	Move cursor one character backward
-Ctrl + Y	Paste whatever was cut by the last command
-Ctrl + Z	Puts whatever you're running into a suspended background process
-Ctrl + _	Undo the last command
+Ctrl + W | Delete the word before the cursor
+Ctrl + T | Swap the last two characters before the cursor
+Esc + T | Swap the last two words before the cursor
+Ctrl + L | Clear the screen
+Ctrl + C | Kill whatever you're running
+Ctrl + D | Exit the current shell
+Option + → | Move cursor one word forward
+Option + ← | Move cursor one word backward
+Ctrl + F | Move cursor one character forward
+Ctrl + B | Move cursor one character backward
+Ctrl + Y | Paste whatever was cut by the last command
+Ctrl + Z | Puts whatever you're running into a suspended background process
+Ctrl + _ | Undo the last command
 
 ### Basics
-
-/ (Forward Slash)	Top level directory
-. (Single Period)	Current directory
-.. (Double Period)	Parent directory
-~ (Tilde)	Home directory
-sudo [command]	Run command with the security privileges of the super user
-nano [file]	Opens the Terminal editor
-open [file]	Opens a file
-[command] -h	Get help about a command
-man [command]	Show the help manual of the command
+------------ | -------------
+/ (Forward Slash) | Top level directory
+. (Single Period) | Current directory
+.. (Double Period) | Parent directory
+~ (Tilde) | Home directory
+sudo [command] | Run command with the security privileges of the super user
+nano [file] | Opens the Terminal editor
+open [file] | Opens a file
+[command] -h | Get help about a command
+man [command] | Show the help manual of the command
 
 ### Change Directory
-cd	Home directory
-cd [folder]	Change directory, e.g. cd Documents
-cd ~	Home directory
-cd/	Root of the drive
-cd -	Previous directory or folder you last browsed
-pwd	Show your working directory
-cd..	Move up to the parent directory
-cd../..	Move up two levels
+cd | Home directory
+cd [folder] | Change directory, e.g. cd Documents
+cd ~ | Home directory
+cd/ | Root of the drive
+cd - | Previous directory or folder you last browsed
+pwd | Show your working directory
+cd.. | Move up to the parent directory
+cd../.. | Move up two levels
 
 ### List Directory Contents
-ls	Display the name of files and subdirectories in the directory
-ls -C	Force multi-column output of the listing
-ls -a	List all entries including those with .(period) and ..(double period)
-ls -1	Output the list of files in one entry per line format
-ls -F	Display a / (slash) immediately after each path that is a directory, * (asterisk) after executable programs or scripts, and @ after a symbolic link
-ls -S	Sort files or entries by size
-ls -l	List in a long format. Includes file mode, owner and group name, date and time file was modified, pathname, and more
-ls -lt	List the files sorted by time modified (most recent first)
-ls -lh	Long listing with human readable file sizes in KB, MB, or GB
-ls -lo	List the file names with size, owner, and flags
-ls -la	List detailed directory contents, including hidden files
+ls | Display the name of files and subdirectories in the directory
+ls -C | Force multi-column output of the listing
+ls -a | List all entries including those with .(period) and ..(double period)
+ls -1 | Output the list of files in one entry per line format
+ls -F | Display a / (slash) immediately after each path that is a directory, * (asterisk) after executable programs or scripts, and @ after a symbolic link
+ls -S | Sort files or entries by size
+ls -l | List in a long format. Includes file mode, owner and group name, date and time file was modified, pathname, and more
+ls -lt | List the files sorted by time modified (most recent first)
+ls -lh | Long listing with human readable file sizes in KB, MB, or GB
+ls -lo | List the file names with size, owner, and flags
+ls -la | List detailed directory contents, including hidden files
 
 ### File Size and Disk Space
-du	List usage for each subdirectory and its contents
-du -sh [folder]	Human readable output of all files in a directory
-du -s	Display an entry for each specified file
-du -sk* | sort -nr	List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
-df -h	Calculate your system's free disk space
-df -H	Calculate free disk space in powers of 1,000 (as opposed to 1,024)
+du | List usage for each subdirectory and its contents
+du -sh [folder] | Human readable output of all files in a directory
+du -s | Display an entry for each specified file
+du -sk* | sort -nr | List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
+df -h | Calculate your system's free disk space
+df -H | Calculate free disk space in powers of 1,000 (as opposed to 1,024)
 
 ### File and Directory Management
 mkdir <dir>	Create new folder named <dir>
