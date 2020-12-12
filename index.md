@@ -86,31 +86,27 @@ Command History |
 Ctrl + R | Search through previously used commands history n	Shows the previous commands you've typed. Add a number to limit to the last n items
 ![value] | Execute the last command typed that starts with a value
 !! | Execute the last command typed
-  
-### Permissions
-ls -ld	Display the default permission for a home directory
-ls -ld/<dir>	Display the read, write, and access permission of a particular folder
-chmod 755 <file>	Change the permission of a file to 755
-chmod -R 600 <dir>	Change the permission of a folder (and its contents) to 600
-chown <user>:<group> <file>	Change the ownership of a file to user and group. Add -R to include folder contents
-  
-### Processes
-ps -ax	Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal
-ps -aux	Shows all the processes with %cpu, %mem, page in, PID, and command
-top	Display live information about currently running processes
-top -ocpu -s 5	Display processes sorted by CPU usage, updating every 5 seconds
-top -o rsize	Sort top by memory usage
-kill PID	Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
+Permissions | 
+ls -ld | Display the default permission for a home directory
+ls -ld/<dir> | Display the read, write, and access permission of a particular folder
+chmod 755 <file> | Change the permission of a file to 755
+chmod -R 600 <dir> | Change the permission of a folder (and its contents) to 600
+chown <user>:<group> <file> | Change the ownership of a file to user and group. Add -R to include folder contents
+Processes | 
+ps -ax | Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal
+ps -aux | Shows all the processes with %cpu, %mem, page in, PID, and command
+top | Display live information about currently running processes
+top -ocpu -s 5 | Display processes sorted by CPU usage, updating every 5 seconds
+top -o rsize | Sort top by memory usage
+kill PID | Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
 (ps -ax | grep <appname>) | Find a process by name or PID
-  
-### Network
+Network | 
 ping <host> | Ping host and display status
 whois <domain> | Output whois info for a domain
 curl -O <url/to/file> | Download file via HTTP, HTTPS, or FTP
 ssh <username>@<host> | Establish SSH connection to <host> with user <username>
 scp <file><user>@<host>:/remote/path | Copy <file> to a remote <host>
-  
-### Homebrew
+Homebrew | 
 brew doctor | Check brew for potential problems
 brew install <formula> | Install a formula
 brew uninstall <formula> | Uninstall a formula
@@ -123,13 +119,11 @@ brew tap homebrew/cask | Tap the cask repository from GitHub
 brew cask list | List all installed casks
 brew cask install <cask> | Install the given cask
 brew cask uninstall <cask> | Uninstall the given cask
-  
-### Search
+Search | 
 find <dir> -name <"file"> | Find all files named <file> inside <dir>. Use wildcards (*) to search for parts of filenames
 grep "<text>" <file> | Output all occurrences of <text> inside <file> (add -i for case insensitivity)
 grep -rl "<text>" <dir> | Search for all files containing <text> inside <dir>
-    
-### Output
+Output | 
 cat <file> | Output the content of <file>
 less <file> | Output the contents of <file> using the less command that supports pagination and more
 head <file> | Output the first 10 lines of <file>
