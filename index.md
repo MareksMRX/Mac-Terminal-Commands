@@ -22,10 +22,7 @@ Ctrl + B | Move cursor one character backward
 Ctrl + Y | Paste whatever was cut by the last command
 Ctrl + Z | Puts whatever you're running into a suspended background process
 Ctrl + _ | Undo the last command
-
-
 Basics |   
------------- | -------------
 / (Forward Slash) | Top level directory
 . (Single Period) | Current directory
 .. (Double Period) | Parent directory
@@ -35,8 +32,7 @@ nano [file] | Opens the Terminal editor
 open [file] | Opens a file
 [command] -h | Get help about a command
 man [command] | Show the help manual of the command
-
-### Change Directory
+Change Directory | 
 cd | Home directory
 cd [folder] | Change directory, e.g. cd Documents
 cd ~ | Home directory
@@ -45,8 +41,7 @@ cd - | Previous directory or folder you last browsed
 pwd | Show your working directory
 cd.. | Move up to the parent directory
 cd../.. | Move up two levels
-
-### List Directory Contents
+List Directory Contents | 
 ls | Display the name of files and subdirectories in the directory
 ls -C | Force multi-column output of the listing
 ls -a | List all entries including those with .(period) and ..(double period)
@@ -58,16 +53,14 @@ ls -lt | List the files sorted by time modified (most recent first)
 ls -lh | Long listing with human readable file sizes in KB, MB, or GB
 ls -lo | List the file names with size, owner, and flags
 ls -la | List detailed directory contents, including hidden files
-
-### File Size and Disk Space
+File Size and Disk Space | 
 du | List usage for each subdirectory and its contents
 du -sh [folder] | Human readable output of all files in a directory
 du -s | Display an entry for each specified file
 du -sk* | sort -nr | List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
 df -h | Calculate your system's free disk space
 df -H | Calculate free disk space in powers of 1,000 (as opposed to 1,024)
-
-### File and Directory Management
+### File and Directory Management | 
 mkdir <dir>	Create new folder named <dir>
 mkdir -p <dir>/<dir>	Create nested folders
 mkdir <dir1> <dir2> <dir3>	Create several folders at once
