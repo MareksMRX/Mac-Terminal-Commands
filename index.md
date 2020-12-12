@@ -23,7 +23,8 @@ Ctrl + Y | Paste whatever was cut by the last command
 Ctrl + Z | Puts whatever you're running into a suspended background process
 Ctrl + _ | Undo the last command
 
-### Basics
+
+### Basics | SHORTCUTS
 ------------ | -------------
 / (Forward Slash) | Top level directory
 . (Single Period) | Current directory
