@@ -48,20 +48,13 @@ Action    >>>>     Shortcuts ===
 
 ACTION | SHORTCUTS
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
 Tab | Auto-complete file and folder names
 Ctrl + A | Go to the beginning of the line you're currently typing on>
 Ctrl + E | Go to the end of the line you're currently typing on
 Ctrl + U | Clear the line before the cursor
 Ctrl + K | Clear the line after the cursor
 
-Tab	Auto-complete file and folder names
-- Ctrl + A	<Go to the beginning of the line you're currently typing on>
-- Ctrl + E	Go to the end of the line you're currently typing on
-Ctrl + U	Clear the line before the cursor
-Ctrl + K	Clear the line after the cursor
+
 Ctrl + W	Delete the word before the cursor
 Ctrl + T	Swap the last two characters before the cursor
 Esc + T	Swap the last two words before the cursor
